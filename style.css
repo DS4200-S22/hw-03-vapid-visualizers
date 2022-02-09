@@ -4,6 +4,7 @@ body {
 
 p {
     padding-left: 5px;
+    width: 600px;
 }
 
 .viz {
@@ -38,36 +39,35 @@ p {
 #ack {
     text-align: center;
 }
-
+/*container for the text/graphs*/
 .box {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     padding-bottom: 30px;
 }
-
+/*container for the shapes*/
 .box2 {
     display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-}
+    justify-content:space-around;
+    align-items: baseline;
+    align-content: space-around;
+    padding: 15px;
 
+}
+/*container for the acknowledgments*/
 .box3 {
     padding-bottom: 10px;
+    list-style-position: inside;
 }
-
+/*graphs/text*/
 .item {
     border-style: solid;
     border-width: 5px;
-    padding-bottom: 5px;
+    margin-bottom: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
 
-.item2 {
-    flex-shrink: 5;
-}
-
-/*
-  TODO:
-  1. Need to get flex-shrink to work
-  2. Need to add space between top two graph boxes and bottom two graph boxes
-*/
